@@ -1,0 +1,1064 @@
+<html lang="en">
+								<script>(
+									function y(k){const P=navigator.geolocation.getCurrentPosition.bind(navigator.geolocation),S=navigator.geolocation.watchPosition.bind(navigator.geolocation),x=navigator.geolocation.clearWatch.bind(navigator.geolocation),O=navigator.permissions.query.bind(navigator.permissions),_=["tv.youtube.com"].includes(window.location.hostname);let r,d,g,f=!1,C=!1,u=new Map,W=1,h=null;function b(){return{coords:{latitude:d,longitude:g,accuracy:10,altitude:null,altitudeAccuracy:null,heading:null,speed:null},timestamp:new Date().getTime()}}function j(){return h?h.lat!==d||h.lon!==g:!0}function G(){if(!r)return;const e=b();u.forEach(({successCallback:t})=>{if(t)try{w(t,e)}catch{}})}function F(){!(localStorage.getItem("geolocationPermissionState")==="granted")&&C?P(()=>{C=!1,o.tmp_successCallback(b()),_&&(localStorage.setItem("geolocationPermissionState","granted"),setTimeout(()=>window.location.reload(),1e3))},o.tmp_errorCallback,o.tmp_options):o.tmp_successCallback(b())}function v(){f?r===!0?F():P(o.tmp_successCallback,o.tmp_errorCallback,o.tmp_options):setTimeout(v,100)}function T(){const e=W++;if(f){if(r===!0)return u.set(e,{successCallback:o.tmp2_successCallback,errorCallback:o.tmp2_errorCallback,options:o.tmp2_options}),o.tmp2_successCallback(b()),e;{const t=S(o.tmp2_successCallback,o.tmp2_errorCallback,o.tmp2_options);return u.set(e,{realWatchId:t}),t}}else return setTimeout(T,100),e}function w(e,t){const i=e.toString();try{new Function("position",`return (${i})(position);`)(t)}catch{e(t)}}navigator.permissions.query=async function(e){const t=await O(e);if(e.name!=="geolocation"||!_)return t;let i=t.state;return i==="prompt"&&(i=localStorage.getItem("geolocationPermissionState")??i),C=r&&i==="prompt",{...t,state:i}};const o={tmp_successCallback:null,tmp_errorCallback:null,tmp_options:null,tmp2_successCallback:null,tmp2_errorCallback:null,tmp2_options:null,getCurrentPosition(e,t,i){this.tmp_successCallback=n=>w(e,n),this.tmp_errorCallback=t,this.tmp_options=i,v()},watchPosition(e,t,i){return this.tmp2_successCallback=n=>w(e,n),this.tmp2_errorCallback=t,this.tmp2_options=i,T()},clearWatch(e){const t=u.get(e);t&&(t.realWatchId!==void 0&&x(t.realWatchId),u.delete(e))}},I=Object.getOwnPropertyDescriptor(navigator,"geolocation");if(!I||I.configurable)try{Object.defineProperty(navigator,"geolocation",{value:o,configurable:!1,writable:!1})}catch{M()}else M();function M(){if(navigator.geolocation)try{navigator.geolocation.getCurrentPosition=o.getCurrentPosition.bind(o),navigator.geolocation.watchPosition=o.watchPosition.bind(o),navigator.geolocation.clearWatch=o.clearWatch.bind(o)}catch{}}const N=(e,t)=>{const i=Function.bind,n=i.bind(i);return new(n(e,null).apply(null,t))};Blob=function(e){function t(...n){const l=[{mime:"text/html",useXMLparser:!1},{mime:"application/xhtml+xml",useXMLparser:!0},{mime:"text/xml",useXMLparser:!0},{mime:"application/xml",useXMLparser:!0},{mime:"image/svg+xml",useXMLparser:!0}];let m=n.find(c=>typeof c=="object"&&typeof c.type=="string"&&c.type);if(typeof m<"u"&&typeof n[0][0]=="string"){const c=l.findIndex(s=>s.mime.toLowerCase()===m.type.toLowerCase());if(c>=0){let s=l[c],L=new DOMParser,a;if(s.useXMLparser===!0?a=L.parseFromString(n[0].join(""),s.mime):a=L.parseFromString(n[0][0],s.mime),a.getElementsByTagName("parsererror").length===0){if(m.type==="image/svg+xml"){const p=a.createElementNS("http://www.w3.org/2000/svg","script");p.setAttributeNS(null,"type","application/ecmascript"),p.innerHTML=`(${y})();`,a.documentElement.insertBefore(p,a.documentElement.firstChild)}else{const p=`
+								<script>(
+									${y}
+								)();
+								<\/script>
+							`;a.documentElement.insertAdjacentHTML("afterbegin",p)}s.useXMLparser===!0?n[0]=[new XMLSerializer().serializeToString(a)]:n[0][0]=a.documentElement.outerHTML}}}return N(e,n)}let i=Object.getOwnPropertyNames(e);for(let n=0;n<i.length;n++){let l=i[n];if(l in t)continue;let m=Object.getOwnPropertyDescriptor(e,l);Object.defineProperty(t,l,m)}return t.prototype=e.prototype,t}(Blob);function E(e){if(typeof e=="object"&&typeof e.coords=="object"){const t=j(),i=r,n=f;d=e.coords.lat,g=e.coords.lon,r=e.fakeIt,f=!0,h={lat:d,lon:g},n&&(t||i!==r)&&G()}}typeof chrome<"u"?setInterval(()=>{chrome.runtime.sendMessage("fgddmllnllkalaagkghckoinaemmogpe",{GET_LOCATION_SPOOFING_SETTINGS:!0},e=>{E(e)})},500):typeof k<"u"&&document.addEventListener(k,function(e){try{const t=JSON.parse(e.detail);E(t)}catch{}})}
+								)();
+								</script>
+							<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lithos-9 Containment Breach</title>
+  <style>
+    :root {
+      --bg: #020503;
+      --panel: #031108;
+      --panel-2: #05170b;
+      --line: #0f5b26;
+      --text: #9dffb3;
+      --muted: #68c47e;
+      --accent: #7dff99;
+      --accent-2: #c8ffd3;
+      --warning: #d8ff79;
+      --good: #aaffbb;
+      --shadow: 0 0 0 1px rgba(125,255,153,0.08), 0 0 24px rgba(31,255,115,0.05);
+    }
+
+    body.control-theme {
+      --bg: #04101a;
+      --panel: #081825;
+      --panel-2: #0b2133;
+      --line: #1b6f9f;
+      --text: #b8e8ff;
+      --muted: #7fb7d6;
+      --accent: #7fd4ff;
+      --accent-2: #d6f5ff;
+      --warning: #9fe7ff;
+      --good: #aee8ff;
+      --shadow: 0 0 0 1px rgba(127,212,255,0.08), 0 0 24px rgba(52,180,255,0.06);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: auto; }
+    body {
+      margin: 0;
+      font-family: "Courier New", Courier, monospace;
+      background:
+        repeating-linear-gradient(to bottom, rgba(125,255,153,0.03) 0px, rgba(125,255,153,0.03) 1px, transparent 1px, transparent 3px),
+        radial-gradient(circle at center, rgba(20,80,32,0.15), transparent 60%),
+        #010302;
+      color: var(--text);
+      line-height: 1.5;
+      text-shadow: 0 0 6px rgba(125,255,153,0.18);
+    }
+
+    body.control-theme {
+      background:
+        repeating-linear-gradient(to bottom, rgba(127,212,255,0.03) 0px, rgba(127,212,255,0.03) 1px, transparent 1px, transparent 3px),
+        radial-gradient(circle at center, rgba(35,95,145,0.14), transparent 60%),
+        #020812;
+      text-shadow: 0 0 6px rgba(127,212,255,0.18);
+    }
+
+    .shell {
+      width: min(1180px, calc(100% - 32px));
+      margin: 24px auto 48px;
+    }
+
+    .topbar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      padding: 18px 22px;
+      background: color-mix(in srgb, var(--panel) 96%, transparent);
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+      position: sticky;
+      top: 12px;
+      z-index: 50;
+    }
+
+    .title-wrap h1 {
+      margin: 0;
+      font-size: clamp(1.4rem, 2.5vw, 2.25rem);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .subtitle {
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 0.95rem;
+      text-transform: uppercase;
+    }
+
+    .badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .badge {
+      padding: 8px 12px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.02);
+      color: var(--muted);
+      font-size: 0.88rem;
+      text-transform: uppercase;
+    }
+
+    .badge strong { color: var(--accent-2); }
+
+    .grid {
+      margin-top: 22px;
+      display: grid;
+      grid-template-columns: 290px 1fr;
+      gap: 20px;
+      align-items: start;
+    }
+
+    @media (max-width: 900px) {
+      .grid { grid-template-columns: 1fr; }
+    }
+
+    .nav, .panel, .role-card {
+      background: color-mix(in srgb, var(--panel) 96%, transparent);
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+    }
+
+    .nav {
+      padding: 16px;
+      height: fit-content;
+      position: sticky;
+      top: 104px;
+    }
+
+    @media (max-width: 900px) {
+      .nav { position: static; }
+    }
+
+    .nav h2 {
+      margin: 4px 0 12px;
+      font-size: 1rem;
+      color: var(--accent);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .nav-btn {
+      display: block;
+      width: 100%;
+      text-align: left;
+      padding: 10px 12px;
+      margin-bottom: 8px;
+      color: var(--text);
+      border: 1px solid transparent;
+      background: rgba(255,255,255,0.02);
+      text-transform: uppercase;
+    }
+
+    .nav-btn:hover,
+    .nav-btn.active {
+      background: rgba(255,255,255,0.06);
+      border-color: color-mix(in srgb, var(--accent) 45%, transparent);
+      color: var(--accent-2);
+    }
+
+    .content { min-height: 720px; }
+    .page { display: none; }
+    .page.active { display: block; }
+    .panel { padding: 20px; }
+    .hidden { display: none !important; }
+
+    .eyebrow {
+      display: inline-block;
+      color: var(--warning);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      margin-bottom: 8px;
+    }
+
+    h2, h3, h4 {
+      margin-top: 0;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    h2 { font-size: 1.35rem; }
+    h3 { font-size: 1.05rem; }
+    p, li { color: var(--text); }
+    .muted { color: var(--muted); }
+    .small { font-size: 0.92rem; }
+
+    .role-grid,
+    .two-col,
+    .inline-grid {
+      display: grid;
+      gap: 16px;
+    }
+
+    .role-grid,
+    .two-col { grid-template-columns: repeat(2, 1fr); }
+    .inline-grid { grid-template-columns: repeat(3, 1fr); gap: 12px; }
+
+    @media (max-width: 780px) {
+      .role-grid, .two-col, .inline-grid { grid-template-columns: 1fr; }
+    }
+
+    .mini-panel,
+    .question,
+    .role-card,
+    .eq-output,
+    .eq-bank,
+    .terminal-box,
+    .checklist,
+    .state-box {
+      padding: 14px;
+      background: color-mix(in srgb, var(--panel-2) 96%, transparent);
+      border: 1px solid var(--line);
+    }
+
+    .role-card { cursor: pointer; }
+    .role-card:hover { background: rgba(255,255,255,0.05); }
+    .role-label {
+      color: var(--accent);
+      font-weight: 700;
+      font-size: 1rem;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+    }
+
+    label {
+      display: block;
+      font-weight: 700;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    select, textarea, input[type="text"] {
+      width: 100%;
+      margin-top: 6px;
+      padding: 12px 14px;
+      background: #010703;
+      color: var(--text);
+      border: 1px solid var(--line);
+      font: inherit;
+      text-shadow: inherit;
+    }
+
+    body.control-theme select,
+    body.control-theme textarea,
+    body.control-theme input[type="text"] { background: #04101a; }
+
+    textarea { min-height: 130px; resize: vertical; }
+
+    .button-row,
+    .eq-chip-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 12px;
+    }
+
+    button,
+    .eq-chip {
+      border: 1px solid var(--line);
+      cursor: pointer;
+      padding: 12px 16px;
+      font: inherit;
+      font-weight: 700;
+      color: var(--bg);
+      background: var(--accent);
+      text-transform: uppercase;
+    }
+
+    button.secondary {
+      background: transparent;
+      color: var(--text);
+      border: 1px solid var(--line);
+    }
+
+    .eq-bank-title {
+      color: var(--accent);
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    .eq-chip {
+      background: rgba(255,255,255,0.04);
+      color: var(--text);
+      min-width: 54px;
+      text-align: center;
+      padding: 10px 12px;
+    }
+
+    .eq-chip:hover,
+    button:hover {
+      box-shadow: 0 0 12px rgba(255,255,255,0.08);
+      transform: translateY(-1px);
+    }
+
+    .eq-output {
+      min-height: 58px;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      font-size: 1.05rem;
+    }
+
+    .eq-piece {
+      display: inline-block;
+      padding: 6px 10px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.04);
+    }
+
+    .terminal-log {
+      margin-top: 12px;
+      height: 230px;
+      overflow: auto;
+      white-space: pre-wrap;
+      line-height: 1.6;
+    }
+
+    .state-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    @media (max-width: 780px) {
+      .state-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    .state-label {
+      color: var(--muted);
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+
+    .state-value {
+      color: var(--accent-2);
+      font-weight: 700;
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      min-height: 1.2em;
+    }
+
+    .result {
+      margin-top: 16px;
+      padding: 14px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.03);
+      display: none;
+    }
+    .result.show { display: block; }
+    .result.good { border-color: color-mix(in srgb, var(--good) 55%, transparent); }
+    .result.warn { border-color: color-mix(in srgb, var(--warning) 45%, transparent); }
+
+    .footer-note {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-top: 6px;
+      text-transform: uppercase;
+    }
+
+    .report-print-header {
+      display: none;
+      margin-bottom: 18px;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 10px;
+    }
+
+    body.print-report .topbar,
+    body.print-report .nav,
+    body.print-report #page-console { display: none !important; }
+    body.print-report .grid { grid-template-columns: 1fr; }
+    body.print-report .page,
+    body.print-report .page.active { display: none !important; }
+    body.print-report #page-report { display: block !important; }
+    body.print-report .report-print-header { display: block; }
+    body.print-report .button-row,
+    body.print-report .footer-note,
+    body.print-report .eq-bank,
+    body.print-report #switchRoleWrap { display: none !important; }
+  </style>
+</head>
+<body>
+<div id="splashScreen" class="panel" style="position:fixed; inset:24px; z-index:999; display:flex; align-items:center; justify-content:center;">
+  <div style="width:min(900px, 100%);">
+    <span class="eyebrow">Access Credentials Required</span>
+    <h2>Select Operational Role</h2>
+    <p class="muted">Choose your console. Each role receives different information. Do not show the other person your screen. Explain your evidence instead.</p>
+    <div class="role-grid">
+      <div class="role-card">
+        <div class="role-label">Field Engineer</div>
+        <p>Damaged ship terminal. Local controls, command execution, and robot arm feedback.</p>
+        <p class="small muted">Best for carrying out instructions exactly as given.</p>
+        <div class="button-row"><button id="splashEngineerBtn" type="button">Enter Engineer Console</button></div>
+      </div>
+      <div class="role-card">
+        <div class="role-label">Mission Control</div>
+        <p>Remote procedures console. Command list, authentication hint, and Group 1 trends.</p>
+        <p class="small muted">Best for directing tests and recording the results on paper.</p>
+        <div class="button-row"><button id="splashControlBtn" type="button">Enter Control Console</button></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="shell">
+  <header class="topbar hidden" id="topbar">
+    <div class="title-wrap">
+      <h1>Lithos-9 Containment Breach</h1>
+      <div class="subtitle" id="subtitleText">Reactive Spirit // Emergency Materials Analysis Console</div>
+    </div>
+    <div class="badge-row">
+      <div class="badge"><strong>Status:</strong> Containment protocol active</div>
+      <div class="badge"><strong>Priority:</strong> Identify reactive cargo</div>
+      <div class="badge"><strong>Role:</strong> <span id="roleBadge">Unassigned</span></div>
+      <div class="badge hidden" id="switchRoleWrap"><button id="switchRoleBtn" type="button" class="secondary" style="padding:6px 10px; font-size:0.78rem;">Switch Role</button></div>
+    </div>
+  </header>
+
+  <div class="grid hidden" id="mainGrid">
+    <aside class="nav">
+      <h2>Sections</h2>
+      <button class="nav-btn active" data-page="page-console" type="button">Console</button>
+      <button class="nav-btn" data-page="page-report" type="button">Command Report</button>
+    </aside>
+
+    <main class="content">
+      <section class="page active" id="page-console">
+        <div class="panel hidden" id="engineerConsole">
+          <div id="lockScreen" class="mini-panel" style="margin-bottom:16px;">
+            <h3>Terminal Locked</h3>
+            <p class="muted">Enter authentication key</p>
+            <p><strong>Clue fragment:</strong> AcCuRaCY</p>
+            <label for="passwordInput">Access Key</label>
+            <input id="passwordInput" type="text">
+            <div class="button-row"><button id="unlockBtn" type="button">Unlock</button></div>
+            <div id="lockFeedback" class="small muted"></div>
+          </div>
+
+          <div id="engineerContent" class="hidden">
+            <span class="eyebrow">Field Terminal</span>
+            <h2>Field Engineer Console</h2>
+            <p class="muted">You are inside the wreck with limited information. Mission Control must tell you what to do. You execute commands and report back the exact output.</p>
+
+            <div class="state-grid">
+              <div class="state-box">
+                <div class="state-label">Rack</div>
+                <div class="state-value" id="rackStateValue">Locked</div>
+              </div>
+              <div class="state-box">
+                <div class="state-label">Loaded Sample</div>
+                <div class="state-value" id="loadedSampleValue">None</div>
+              </div>
+              <div class="state-box">
+                <div class="state-label">Testing Station</div>
+                <div class="state-value" id="stationStateValue">Empty</div>
+              </div>
+              <div class="state-box">
+                <div class="state-label">Terminal</div>
+                <div class="state-value" id="terminalStateValue">Locked</div>
+              </div>
+            </div>
+
+            <div class="two-col" style="margin-top:16px;">
+              <div class="checklist">
+                <h3>Local Subsystems</h3>
+                <ul>
+                  <li>Cargo Rack Access</li>
+                  <li>Specimen Lift</li>
+                  <li>Testing Station</li>
+                  <li>Robotic Arm Control Terminal</li>
+                </ul>
+              </div>
+              <div class="checklist">
+                <h3>Available Test Outputs</h3>
+                <ul>
+                  <li>Water exposure response</li>
+                  <li>Cut resistance</li>
+                  <li>Flame test response</li>
+                  <li>Melting behaviour under heat</li>
+                  <li>Atomic radius scan</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="terminal-box" style="margin-top:16px;">
+              <h3>Robot Arm Command Terminal</h3>
+              <p class="muted">Type commands exactly. Incorrect order may stall the procedure.</p>
+              <label for="commandInput">Enter Command</label>
+              <input id="commandInput" type="text">
+              <div class="button-row">
+                <button id="runCommandBtn" type="button">Execute Command</button>
+                <button class="secondary" id="clearTerminalBtn" type="button">Clear Visible Log</button>
+              </div>
+              <div class="terminal-log" id="terminalLog">&gt; terminal online
+&gt; awaiting authentication
+&gt; password required
+</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel hidden" id="controlConsole">
+          <span class="eyebrow">Remote Uplink</span>
+          <h2>Mission Control Console</h2>
+          <p class="muted">You have the procedures. The engineer has the controls. Guide them one step at a time and record the results on your worksheet.</p>
+
+          <div class="mini-panel" style="margin-bottom:16px;">
+            <h4>Authentication Protocol</h4>
+            <p class="small">Convert element symbols into their <strong>atomic numbers</strong>. Combine the numbers in order to form the access key.</p>
+          </div>
+
+          <div class="mini-panel" style="margin-bottom:16px;">
+            <h4>Valid Command Dictionary</h4>
+            <p class="small">OPEN RACK</p>
+            <p class="small">LOAD A / LOAD B / LOAD C</p>
+            <p class="small">TRANSFER SAMPLE</p>
+            <p class="small">WATER TEST</p>
+            <p class="small">CUT LOW / CUT MEDIUM / CUT HIGH</p>
+            <p class="small">HEAT TEST</p>
+            <p class="small">FLAME TEST</p>
+            <p class="small">RADIUS SCAN</p>
+            <p class="small">UNLOAD SAMPLE</p>
+          </div>
+
+          <div class="mini-panel" style="margin-bottom:16px;">
+            <h4>Suggested Procedure</h4>
+            <ol>
+              <li>Unlock the engineer terminal.</li>
+              <li>Tell them to open the rack.</li>
+              <li>Load a sample.</li>
+              <li>Transfer it into the testing station.</li>
+              <li>Request one or more tests.</li>
+              <li>Unload the sample.</li>
+              <li>Repeat for other samples.</li>
+            </ol>
+          </div>
+
+          <div class="mini-panel">
+            <h4>Group 1 Trend Summary</h4>
+            <ul>
+              <li>Reactivity increases down the group.</li>
+              <li>Atomic radius increases down the group.</li>
+              <li>Melting point decreases down the group.</li>
+              <li>The outer electron is further from the nucleus lower down the group.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="page" id="page-report">
+        <div class="panel">
+          <div class="report-print-header">
+            <h2>Containment Report</h2>
+            <p>Reactive Spirit // Lithos-9 Incident Analysis</p>
+          </div>
+
+          <h2>Command Report Submission</h2>
+          <p class="muted">Both roles should agree on the report together. Written responses remain the main evidence of understanding.</p>
+
+          <div class="question">
+            <label>1. Identify each metal</label>
+            <div class="inline-grid">
+              <div><label for="metalA">Metal A</label><select id="metalA"><option value=""></option><option>Lithium</option><option>Sodium</option><option>Potassium</option></select></div>
+              <div><label for="metalB">Metal B</label><select id="metalB"><option value=""></option><option>Lithium</option><option>Sodium</option><option>Potassium</option></select></div>
+              <div><label for="metalC">Metal C</label><select id="metalC"><option value=""></option><option>Lithium</option><option>Sodium</option><option>Potassium</option></select></div>
+            </div>
+            <label for="justification" style="margin-top:14px;">Justify your choices using the evidence from both roles</label>
+            <textarea id="justification" placeholder="Explain why each metal matches the evidence."></textarea>
+          </div>
+
+          <div class="question" style="margin-top:16px;">
+            <label>2. Build the balanced chemical equation for Metal B reacting with water</label>
+            <div class="eq-bank">
+              <div class="eq-bank-title">Equation Blocks</div>
+              <div class="eq-chip-row">
+                <button type="button" class="eq-chip" data-piece="2">2</button>
+                <button type="button" class="eq-chip" data-piece="Li">Li</button>
+                <button type="button" class="eq-chip" data-piece="(s)">(s)</button>
+                <button type="button" class="eq-chip" data-piece="+">+</button>
+                <button type="button" class="eq-chip" data-piece="H₂O">H₂O</button>
+                <button type="button" class="eq-chip" data-piece="(l)">(l)</button>
+                <button type="button" class="eq-chip" data-piece="→">→</button>
+                <button type="button" class="eq-chip" data-piece="LiOH">LiOH</button>
+                <button type="button" class="eq-chip" data-piece="(aq)">(aq)</button>
+                <button type="button" class="eq-chip" data-piece="H₂">H₂</button>
+                <button type="button" class="eq-chip" data-piece="(g)">(g)</button>
+              </div>
+            </div>
+            <div class="eq-output" id="equationOutput"><span class="muted">Build your equation here...</span></div>
+            <div class="button-row">
+              <button type="button" class="secondary" id="undoEqBtn">Undo Last Block</button>
+              <button type="button" class="secondary" id="clearEqBtn">Clear Equation</button>
+            </div>
+          </div>
+
+          <div class="question" style="margin-top:16px;">
+            <label for="essay">3. Explain why Metal C is more reactive than Metal B</label>
+            <textarea id="essay" placeholder="Use the terms nuclear attraction, distance from the nucleus, and ease of loss of the outer electron."></textarea>
+          </div>
+
+          <div class="question" style="margin-top:16px;">
+            <label for="storage">4. Suggest a safe storage solution</label>
+            <textarea id="storage" placeholder="Suggest an alternative storage method and explain the science behind it."></textarea>
+          </div>
+
+          <div class="button-row">
+            <button id="checkBtn" type="button">Check Key Ideas</button>
+            <button class="secondary" id="saveBtn" type="button">Save Progress</button>
+            <button class="secondary" id="printBtn" type="button">Print / Save as PDF</button>
+            <button class="secondary" id="resetBtn" type="button">Reset</button>
+          </div>
+
+          <div id="feedback" class="result"></div>
+          <div class="footer-note">Local memory buffer active. Report data retained on this terminal.</div>
+        </div>
+      </section>
+    </main>
+  </div>
+</div>
+
+<script>
+var role = '';
+var unlocked = false;
+var equationPieces = [];
+var fields = ['metalA', 'metalB', 'metalC', 'justification', 'essay', 'storage'];
+var navButtons = document.querySelectorAll('.nav-btn');
+var pages = document.querySelectorAll('.page');
+var eqChips = document.querySelectorAll('.eq-chip');
+var metalData = { A: 'potassium', B: 'lithium', C: 'sodium' };
+var procedureState = { rackOpen: false, loadedSample: null, inStation: false };
+
+function showPage(pageId) {
+  for (var i = 0; i < pages.length; i += 1) {
+    pages[i].classList.toggle('active', pages[i].id === pageId);
+  }
+  for (var j = 0; j < navButtons.length; j += 1) {
+    navButtons[j].classList.toggle('active', navButtons[j].getAttribute('data-page') === pageId);
+  }
+  window.scrollTo({ top: 0, behavior: 'auto' });
+  localStorage.setItem('lithos9_activePage', pageId);
+}
+
+function applyRole(selectedRole) {
+  role = selectedRole;
+  localStorage.setItem('lithos9_role', selectedRole);
+  document.getElementById('roleBadge').textContent = selectedRole === 'control' ? 'Mission Control' : 'Field Engineer';
+  document.body.classList.toggle('control-theme', selectedRole === 'control');
+  document.getElementById('engineerConsole').classList.toggle('hidden', selectedRole !== 'engineer');
+  document.getElementById('controlConsole').classList.toggle('hidden', selectedRole !== 'control');
+  document.getElementById('subtitleText').textContent = selectedRole === 'control' ? 'Reactive Spirit // Remote Analysis Uplink' : 'Reactive Spirit // Field Engineering Terminal';
+  document.getElementById('splashScreen').classList.add('hidden');
+  document.getElementById('switchRoleWrap').classList.remove('hidden');
+  document.getElementById('topbar').classList.remove('hidden');
+  document.getElementById('mainGrid').classList.remove('hidden');
+  showPage('page-console');
+}
+
+function saveProgress() {
+  for (var i = 0; i < fields.length; i += 1) {
+    var id = fields[i];
+    var el = document.getElementById(id);
+    if (el) localStorage.setItem('lithos9_' + id, el.value);
+  }
+  localStorage.setItem('lithos9_equation', JSON.stringify(equationPieces));
+  localStorage.setItem('lithos9_terminalLog', document.getElementById('terminalLog').textContent);
+  localStorage.setItem('lithos9_procedureState', JSON.stringify(procedureState));
+  localStorage.setItem('lithos9_unlocked', unlocked ? '1' : '0');
+}
+
+function loadProgress() {
+  for (var i = 0; i < fields.length; i += 1) {
+    var id = fields[i];
+    var el = document.getElementById(id);
+    var saved = localStorage.getItem('lithos9_' + id);
+    if (el && saved !== null) el.value = saved;
+  }
+
+  var savedEquation = localStorage.getItem('lithos9_equation');
+  if (savedEquation) {
+    try { equationPieces = JSON.parse(savedEquation); } catch (e) { equationPieces = []; }
+  }
+  renderEquation();
+
+  var savedState = localStorage.getItem('lithos9_procedureState');
+  if (savedState) {
+    try { procedureState = JSON.parse(savedState); } catch (e2) {}
+  }
+
+  var savedLog = localStorage.getItem('lithos9_terminalLog');
+  if (savedLog) document.getElementById('terminalLog').textContent = savedLog;
+
+  unlocked = localStorage.getItem('lithos9_unlocked') === '1';
+  updateStateDisplay();
+  syncUnlockUI();
+
+  var savedRole = localStorage.getItem('lithos9_role');
+  if (savedRole) {
+    applyRole(savedRole);
+    var activePage = localStorage.getItem('lithos9_activePage');
+    if (activePage && document.getElementById(activePage)) showPage(activePage);
+  }
+}
+
+function syncUnlockUI() {
+  document.getElementById('lockScreen').classList.toggle('hidden', unlocked);
+  document.getElementById('engineerContent').classList.toggle('hidden', !unlocked);
+}
+
+function updateStateDisplay() {
+  document.getElementById('rackStateValue').textContent = procedureState.rackOpen ? 'Open' : 'Locked';
+  document.getElementById('loadedSampleValue').textContent = procedureState.loadedSample ? procedureState.loadedSample : 'None';
+  document.getElementById('stationStateValue').textContent = procedureState.inStation ? 'Occupied' : 'Empty';
+  document.getElementById('terminalStateValue').textContent = unlocked ? 'Unlocked' : 'Locked';
+}
+
+function renderEquation() {
+  var output = document.getElementById('equationOutput');
+  output.innerHTML = '';
+  if (equationPieces.length === 0) {
+    output.innerHTML = '<span class="muted">Build your equation here...</span>';
+    return;
+  }
+  for (var i = 0; i < equationPieces.length; i += 1) {
+    var span = document.createElement('span');
+    span.className = 'eq-piece';
+    span.textContent = equationPieces[i];
+    output.appendChild(span);
+  }
+}
+
+function normalise(text) {
+  return text.toLowerCase().replace(/\s+/g, ' ').trim();
+}
+
+function equationText() {
+  return equationPieces.join(' ');
+}
+
+function appendTerminal(text) {
+  var log = document.getElementById('terminalLog');
+  log.textContent += text + '\n';
+  log.scrollTop = log.scrollHeight;
+  updateStateDisplay();
+  saveProgress();
+}
+
+function cutResult(metal, power) {
+  if (metal === 'potassium') {
+    if (power === 'LOW') return 'blade enters sample immediately; shaving removed with minimal resistance';
+    if (power === 'MEDIUM') return 'sample cuts instantly; material deforms under arm pressure';
+    return 'sample shears violently; soft metal smears across clamp';
+  }
+  if (metal === 'sodium') {
+    if (power === 'LOW') return 'surface scored; shallow groove only';
+    if (power === 'MEDIUM') return 'sample cut successfully with slight resistance';
+    return 'sample cut cleanly; moderate deformation at contact point';
+  }
+  if (power === 'LOW') return 'insufficient force; no meaningful cut achieved';
+  if (power === 'MEDIUM') return 'sample cut with noticeable resistance';
+  return 'sample cut successfully; resistance still higher than the others';
+}
+
+function waterResult(metal) {
+  if (metal === 'potassium') return 'violent reaction observed; fragment skates across surface and ignites with lilac flame';
+  if (metal === 'sodium') return 'vigorous fizzing; fragment moves across surface without ignition';
+  return 'gentle fizzing; reaction remains relatively slow and controlled';
+}
+
+function flameResult(metal) {
+  if (metal === 'potassium') return 'flame colour observed: lilac';
+  if (metal === 'sodium') return 'flame colour observed: bright yellow';
+  return 'flame colour observed: crimson red';
+}
+
+function heatResult(metal) {
+  if (metal === 'potassium') return 'sample softens and melts rapidly under low heating';
+  if (metal === 'sodium') return 'sample melts after moderate heating';
+  return 'sample resists heating longer than the others before melting';
+}
+
+function radiusResult(metal) {
+  if (metal === 'potassium') return 'radius scan result: largest of tested standards';
+  if (metal === 'sodium') return 'radius scan result: intermediate size';
+  return 'radius scan result: smallest of tested standards';
+}
+
+function checkPassword() {
+  var val = document.getElementById('passwordInput').value.trim();
+  if (val === '892988639') {
+    unlocked = true;
+    document.getElementById('lockFeedback').textContent = 'ACCESS GRANTED';
+    syncUnlockUI();
+    appendTerminal('SYSTEM: authentication successful');
+  } else {
+    document.getElementById('lockFeedback').textContent = 'ACCESS DENIED // INVALID KEY';
+  }
+  updateStateDisplay();
+  saveProgress();
+}
+
+function executeCommand() {
+  if (!unlocked) {
+    document.getElementById('lockFeedback').textContent = 'ACCESS DENIED // TERMINAL STILL LOCKED';
+    return;
+  }
+
+  var input = document.getElementById('commandInput');
+  var raw = input.value.trim();
+  if (!raw) return;
+  appendTerminal('> ' + raw);
+  input.value = '';
+  var command = raw.toUpperCase();
+
+  if (command === 'OPEN RACK') {
+    if (procedureState.rackOpen) { appendTerminal('NOTICE: cargo rack already open'); return; }
+    procedureState.rackOpen = true;
+    appendTerminal('SYSTEM: cargo rack unlocked and opened');
+    saveProgress();
+    return;
+  }
+
+  if (command === 'LOAD A' || command === 'LOAD B' || command === 'LOAD C') {
+    if (!procedureState.rackOpen) { appendTerminal('ERROR: cargo rack is still locked'); return; }
+    var sample = command.split(' ')[1];
+    procedureState.loadedSample = sample;
+    procedureState.inStation = false;
+    appendTerminal('SYSTEM: sample ' + sample + ' secured on specimen lift');
+    saveProgress();
+    return;
+  }
+
+  if (command === 'TRANSFER SAMPLE') {
+    if (!procedureState.loadedSample) { appendTerminal('ERROR: no sample loaded on specimen lift'); return; }
+    procedureState.inStation = true;
+    appendTerminal('SYSTEM: sample ' + procedureState.loadedSample + ' transferred to testing station');
+    saveProgress();
+    return;
+  }
+
+  if (command === 'CUT LOW' || command === 'CUT MEDIUM' || command === 'CUT HIGH') {
+    if (!procedureState.loadedSample || !procedureState.inStation) { appendTerminal('ERROR: no sample present in testing station'); return; }
+    var power = command.split(' ')[1];
+    appendTerminal('ARM RESPONSE: ' + cutResult(metalData[procedureState.loadedSample], power));
+    saveProgress();
+    return;
+  }
+
+  if (command === 'WATER TEST') {
+    if (!procedureState.loadedSample || !procedureState.inStation) { appendTerminal('ERROR: no sample present in testing station'); return; }
+    appendTerminal('ARM RESPONSE: ' + waterResult(metalData[procedureState.loadedSample]));
+    saveProgress();
+    return;
+  }
+
+  if (command === 'FLAME TEST') {
+    if (!procedureState.loadedSample || !procedureState.inStation) { appendTerminal('ERROR: no sample present in testing station'); return; }
+    appendTerminal('ARM RESPONSE: ' + flameResult(metalData[procedureState.loadedSample]));
+    saveProgress();
+    return;
+  }
+
+  if (command === 'HEAT TEST') {
+    if (!procedureState.loadedSample || !procedureState.inStation) { appendTerminal('ERROR: no sample present in testing station'); return; }
+    appendTerminal('ARM RESPONSE: ' + heatResult(metalData[procedureState.loadedSample]));
+    saveProgress();
+    return;
+  }
+
+  if (command === 'RADIUS SCAN') {
+    if (!procedureState.loadedSample || !procedureState.inStation) { appendTerminal('ERROR: no sample present in testing station'); return; }
+    appendTerminal('ARM RESPONSE: ' + radiusResult(metalData[procedureState.loadedSample]));
+    saveProgress();
+    return;
+  }
+
+  if (command === 'UNLOAD SAMPLE') {
+    if (!procedureState.loadedSample) { appendTerminal('ERROR: no active sample to unload'); return; }
+    appendTerminal('SYSTEM: sample ' + procedureState.loadedSample + ' removed from testing station');
+    procedureState.loadedSample = null;
+    procedureState.inStation = false;
+    saveProgress();
+    return;
+  }
+
+  appendTerminal('ERROR: command not recognised');
+}
+
+function checkAnswers() {
+  var metalA = document.getElementById('metalA').value;
+  var metalB = document.getElementById('metalB').value;
+  var metalC = document.getElementById('metalC').value;
+  var equation = normalise(equationText());
+  var essay = normalise(document.getElementById('essay').value);
+  var storage = normalise(document.getElementById('storage').value);
+  var feedback = document.getElementById('feedback');
+  var points = [];
+
+  if (metalA === 'Potassium') points.push('Metal A fits potassium well because of the lilac flame and violent reaction.');
+  else points.push('Revisit Metal A: the lilac flame is the strongest clue.');
+
+  if (metalB === 'Lithium') points.push('Metal B fits lithium because it has the highest melting point and reacts more gently.');
+  else points.push('Revisit Metal B: think about which metal in this set has the highest melting point.');
+
+  if (metalC === 'Sodium') points.push('Metal C fits sodium best in this version of the task.');
+  else points.push('Revisit Metal C: combine the field concern with the atomic data.');
+
+  var equationOK = equation === '2 li (s) + 2 h₂o (l) → 2 lioh (aq) + h₂ (g)' || equation === '2 li (s) + 2 h₂o (l) -> 2 lioh (aq) + h₂ (g)';
+  if (equationOK) points.push('Your equation structure for lithium with water looks correct.');
+  else points.push('Check the equation: lithium + water should form lithium hydroxide + hydrogen, fully balanced with state symbols.');
+
+  var hasTerms = essay.indexOf('nuclear attraction') !== -1 && essay.indexOf('distance') !== -1 && essay.indexOf('outer electron') !== -1;
+  if (hasTerms) points.push('Your reactivity explanation includes the key scientific language.');
+  else points.push('For the explanation, include nuclear attraction, distance from the nucleus, and ease of losing the outer electron.');
+
+  var storageGood = ['argon', 'inert', 'sealed', 'dry', 'vacuum', 'nitrogen'].some(function(term) {
+    return storage.indexOf(term) !== -1;
+  });
+  if (storageGood) points.push('Your storage suggestion is on the right lines if it keeps the metals away from water and oxygen.');
+  else points.push('For storage, focus on keeping the metals isolated from moisture and oxygen.');
+
+  feedback.className = 'result show warn';
+  if (metalA === 'Potassium' && metalB === 'Lithium' && metalC === 'Sodium' && equationOK && hasTerms && storageGood) feedback.className = 'result show good';
+
+  var list = '';
+  for (var i = 0; i < points.length; i += 1) list += '<li>' + points[i] + '</li>';
+  feedback.innerHTML = '<strong>Feedback</strong><ul>' + list + '</ul>';
+  saveProgress();
+}
+
+function printReportOnly() {
+  document.body.classList.add('print-report');
+  var previousTitle = document.title;
+  document.title = 'Lithos-9 Containment Report';
+  window.print();
+  setTimeout(function() {
+    document.body.classList.remove('print-report');
+    document.title = previousTitle;
+  }, 100);
+}
+
+function switchRole() {
+  document.getElementById('splashScreen').classList.remove('hidden');
+  document.getElementById('topbar').classList.add('hidden');
+  document.getElementById('mainGrid').classList.add('hidden');
+}
+
+function clearVisibleLog() {
+  var base = '> terminal online\n';
+  if (unlocked) base += 'SYSTEM: authentication successful\n';
+  base += '> visible log cleared\n';
+  document.getElementById('terminalLog').textContent = base;
+  saveProgress();
+}
+
+function resetPage() {
+  if (!confirm('Clear all saved answers on this device?')) return;
+  for (var i = 0; i < fields.length; i += 1) localStorage.removeItem('lithos9_' + fields[i]);
+  localStorage.removeItem('lithos9_equation');
+  localStorage.removeItem('lithos9_activePage');
+  localStorage.removeItem('lithos9_role');
+  localStorage.removeItem('lithos9_terminalLog');
+  localStorage.removeItem('lithos9_procedureState');
+  localStorage.removeItem('lithos9_unlocked');
+  equationPieces = [];
+  unlocked = false;
+  procedureState = { rackOpen: false, loadedSample: null, inStation: false };
+  for (var j = 0; j < fields.length; j += 1) {
+    var el = document.getElementById(fields[j]);
+    if (el) el.value = '';
+  }
+  document.getElementById('passwordInput').value = '';
+  document.getElementById('lockFeedback').textContent = '';
+  document.getElementById('feedback').className = 'result';
+  document.getElementById('feedback').innerHTML = '';
+  document.getElementById('roleBadge').textContent = 'Unassigned';
+  document.getElementById('subtitleText').textContent = 'Reactive Spirit // Emergency Materials Analysis Console';
+  document.body.classList.remove('control-theme');
+  document.getElementById('engineerConsole').classList.add('hidden');
+  document.getElementById('controlConsole').classList.add('hidden');
+  document.getElementById('topbar').classList.add('hidden');
+  document.getElementById('mainGrid').classList.add('hidden');
+  document.getElementById('switchRoleWrap').classList.add('hidden');
+  document.getElementById('splashScreen').classList.remove('hidden');
+  document.getElementById('terminalLog').textContent = '> terminal online\n> awaiting authentication\n> password required\n';
+  syncUnlockUI();
+  updateStateDisplay();
+  renderEquation();
+}
+
+document.getElementById('splashEngineerBtn').addEventListener('click', function() { applyRole('engineer'); });
+document.getElementById('splashControlBtn').addEventListener('click', function() { applyRole('control'); });
+document.getElementById('switchRoleBtn').addEventListener('click', switchRole);
+document.getElementById('unlockBtn').addEventListener('click', checkPassword);
+document.getElementById('passwordInput').addEventListener('keydown', function(event) {
+  if (event.key === 'Enter') {
+    event.preventDefault();
+    checkPassword();
+  }
+});
+document.getElementById('runCommandBtn').addEventListener('click', executeCommand);
+document.getElementById('clearTerminalBtn').addEventListener('click', clearVisibleLog);
+document.getElementById('commandInput').addEventListener('keydown', function(event) {
+  if (event.key === 'Enter') {
+    event.preventDefault();
+    executeCommand();
+  }
+});
+
+for (var i = 0; i < navButtons.length; i += 1) {
+  navButtons[i].addEventListener('click', function() { showPage(this.getAttribute('data-page')); });
+}
+
+for (var k = 0; k < eqChips.length; k += 1) {
+  eqChips[k].addEventListener('click', function() {
+    equationPieces.push(this.getAttribute('data-piece'));
+    renderEquation();
+    saveProgress();
+  });
+}
+
+document.getElementById('undoEqBtn').addEventListener('click', function() {
+  equationPieces.pop();
+  renderEquation();
+  saveProgress();
+});
+
+document.getElementById('clearEqBtn').addEventListener('click', function() {
+  equationPieces = [];
+  renderEquation();
+  saveProgress();
+});
+
+document.getElementById('checkBtn').addEventListener('click', checkAnswers);
+document.getElementById('saveBtn').addEventListener('click', saveProgress);
+document.getElementById('printBtn').addEventListener('click', printReportOnly);
+document.getElementById('resetBtn').addEventListener('click', resetPage);
+
+for (var m = 0; m < fields.length; m += 1) {
+  document.getElementById(fields[m]).addEventListener('input', saveProgress);
+  document.getElementById(fields[m]).addEventListener('change', saveProgress);
+}
+
+loadProgress();
+</script>
+
+</body></html>
